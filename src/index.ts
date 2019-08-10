@@ -32,7 +32,7 @@ router.post('/upload', async (ctx: Koa.Context) => {
 		await fse.copy(file.path, `./uploaded/${newFileName}.${fileExt}`);
 		debug(`${newFileName}.${fileExt}`);
 		ctx.status = 200;
-		ctx.body = `${process.env.URL_BASE}/${newFileName}.${fileExt}`;
+		ctx.body = `${process.env.URL_PROTOCOL}://${process.env.URL_BASE}/${newFileName}.${fileExt}`;
 	} else {
 		throw httpError(400, 'No file uploaded with key "uploadedFile"');
 	}
