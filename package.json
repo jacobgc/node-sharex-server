@@ -1,0 +1,41 @@
+{
+    "name": "sharex-server",
+    "version": "1.0.0",
+    "description": "A TypeScript implementation of a sharex server",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/index.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jacobgc/node-sharex-server.git"
+    },
+    "keywords": [
+        "sharex",
+        "server",
+        "typescript"
+    ],
+    "author": "Jacob Gee-Clarke <jacob@jacobgc.me>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jacobgc/node-sharex-server/issues"
+    },
+    "homepage": "https://github.com/jacobgc/node-sharex-server#readme",
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "koa": "^2.7.0",
+        "koa-router": "^7.4.0"
+    },
+    "devDependencies": {
+        "@types/koa": "^2.0.49",
+        "@types/koa-router": "^7.0.42",
+        "@types/node": "^12.7.1",
+        "@typescript-eslint/eslint-plugin": "^1.13.0",
+        "@typescript-eslint/parser": "^1.13.0",
+        "eslint": "^6.1.0",
+        "nodemon": "^1.19.1",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.3"
+    }
+}
